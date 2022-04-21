@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@100;300;500&display=swap');
+
+:root{
+    --color1: #0554F2;
+    --color2: #C2D2F2;
+    --color3: #F2E41B;
+    --color4: #8C8C8C;
+    --color5: #262626;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*NavBar*/
+header nav{
+    background-color: var(--color1);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 15px 0;
+    color: var(--color2);
+}
+
+.view-type{
+    position: absolute;
+    left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color5);
+}
+
+.view-type span{
+    font-weight: 700;
+}
+
+.view-type__item{
+    margin: 3px 10px;
+}
+
+/*Fluxograma*/
+main{
+    font-family: 'Roboto', sans-serif;
+}
+
+.nivel-acesso{
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: aqua; */
+}
+
+.nivel-acesso__paginas{
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: var(--color5);
+}
+
+.nivel-acesso__pagina{
+    background-color: var(--color2);
+    min-width: 200px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.nivel-acesso__pagina:hover{
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+.nivel-acesso__pagina:hover a{ 
+    color: var(--color3);
+}
+
+.nivel-acesso__pagina a{
+    text-decoration: none;
+    color: var(--color5);
+    transition: all .5s ease;
+}
+
+.nivel-acesso__pagina a:hover{
+    text-decoration: underline;
+}
+
+.nivel-acesso__descricao{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #8C8C8C;
+}
+
+.nivel-acesso__descricao h3{
+    font-weight: 500;
+}
