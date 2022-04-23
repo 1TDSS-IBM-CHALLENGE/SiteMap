@@ -16,6 +16,12 @@
 }
 
 /*NavBar*/
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
 header nav{
     background-color: var(--color1);
     font-family: 'Poppins', sans-serif;
@@ -24,6 +30,7 @@ header nav{
     align-items: center;
     padding: 15px 0;
     color: var(--color2);
+    box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
 }
 
 /*Fluxograma*/
